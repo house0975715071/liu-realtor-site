@@ -517,9 +517,11 @@ dialog.line-dlg::backdrop { background: rgba(0, 0, 0, .7); backdrop-filter: blur
     backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border-top: 1px solid var(--line);
   }
   .mbar .btn { min-height: 48px; }
+  /* 平板直放、窄視窗（500～760 寬）照片不要放大到臉跑進文字區：最寬 440 置中 */
+  .hero-photo { width: min(100%, 440px); left: 50%; right: auto; transform: translateX(-50%); }
   @media (max-height: 600px) {
     /* 很矮的手機（iPhone SE＋Safari 工具列）放不下臉＋整段字：字排到臉下面，按鈕往下捲才看到，底部固定列一直都在 */
-    .hero { min-height: 0; align-items: flex-start; padding-top: calc(50vw + 16px); }
+    .hero { min-height: 0; align-items: flex-start; padding-top: calc(min(50vw, 220px) + 16px); }
   }
   .dlg-qr { grid-template-columns: 1fr; justify-items: center; }
 }
@@ -893,6 +895,8 @@ dialog.line-dlg::backdrop { background: rgba(0, 0, 0, .7); backdrop-filter: blur
     ["destiny", "services", "listings", "shorts", "about", "faq"].forEach(function (id) {
       var el = document.getElementById(id); if (el) spy.observe(el);
     });
+    // 手機版預約卡排在段落中間：捲到它時頁籤全部熄燈（電腦版它固定在右邊，不監看）
+    if (window.innerWidth <= 900) spy.observe(document.getElementById("consult"));
 
     // ---- 進場動畫
     var rv = new IntersectionObserver(function (entries) {
