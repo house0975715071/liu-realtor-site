@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>劉益良（阿良）房仲命理師｜中壢桃園買賣・陽宅諮詢・紫微排盤</title>
-<meta name="description" content="房仲命理師阿良（劉益良），中信房屋中原大學加盟店。中壢・平鎮・八德・桃園房屋買賣租賃，免費估價；陽宅諮詢採預約制，紫微斗數免費線上排盤。LINE @house168168">
+<title>劉益良（阿良）房仲命理師｜中壢桃園買賣・陽宅・紫微・星盤</title>
+<meta name="description" content="房仲命理師阿良（劉益良），中信房屋中原大學加盟店。中壢・平鎮・八德・桃園房屋買賣租賃，免費估價；陽宅諮詢採預約制，紫微斗數、西洋星盤免費線上排盤。LINE @house168168">
 <link rel="canonical" href="https://house0975715071.github.io/liu-realtor-site/">
 <meta name="theme-color" content="#000000">
 <meta name="color-scheme" content="dark">
@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="阿良｜劉益良 房仲命理師">
 <meta property="og:url" content="https://house0975715071.github.io/liu-realtor-site/">
 <meta property="og:title" content="劉益良（阿良）｜房仲命理師・中壢桃園房產顧問">
-<meta property="og:description" content="懂房子，也懂命理。買房、賣房先把行情、稅費、貸款攤開來看；陽宅諮詢採預約制，紫微斗數免費排盤。中信房屋中原大學加盟店，LINE @house168168。">
+<meta property="og:description" content="懂房子，也懂命理。買房、賣房先把行情、稅費、貸款攤開來看；陽宅諮詢採預約制，紫微斗數、西洋星盤免費排盤。中信房屋中原大學加盟店，LINE @house168168。">
 <meta property="og:image" content="https://house0975715071.github.io/liu-realtor-site/images/og.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -49,7 +49,7 @@
       "name": "劉益良",
       "alternateName": ["阿良", "中信阿良"],
       "jobTitle": "不動產經紀營業員（房仲命理師）",
-      "knowsAbout": ["不動產買賣", "房屋租賃", "易經", "陽宅風水", "紫微斗數"],
+      "knowsAbout": ["不動產買賣", "房屋租賃", "易經", "陽宅風水", "紫微斗數", "西洋占星"],
       "image": "https://house0975715071.github.io/liu-realtor-site/images/hero.jpg",
       "telephone": "+886-975-715-071",
       "email": "house0975715071@gmail.com",
@@ -126,8 +126,8 @@
         },
         {
           "@type": "Question",
-          "name": "紫微斗數排盤要錢嗎？生日會被存起來嗎？",
-          "acceptedAnswer": { "@type": "Answer", "text": "不用錢，網頁版免費，輸入生日時辰就能排。生日只在你的手機裡計算，不會上傳，也不會留在網址上。" }
+          "name": "紫微斗數、西洋星盤要錢嗎？生日會被存起來嗎？",
+          "acceptedAnswer": { "@type": "Answer", "text": "不用錢，網頁版都免費：紫微輸入生日時辰、星盤再加上出生地就能排。生日只在你的手機裡計算，不會上傳，也不會留在網址上。" }
         },
         {
           "@type": "Question",
@@ -192,7 +192,7 @@ button, input, textarea { font: inherit; color: inherit; }
 .topbar .tb-star { color: var(--gold); }
 .topbar .tb-short { display: none; }
 .topbar .tb-go { border: 1px solid rgba(201, 169, 110, .6); border-radius: 999px; padding: 0 12px; font-weight: 700; white-space: nowrap; transition: background .2s, color .2s; }
-.topbar:hover .tb-go { background: var(--gold); color: #000; }
+.topbar .tb-go:hover, .topbar .tb-go:focus-visible { background: var(--gold); color: #000; }
 .header {
   position: sticky; top: 0; z-index: 50; height: var(--header);
   transition: background .25s ease, border-color .25s ease;
@@ -258,6 +258,7 @@ button, input, textarea { font: inherit; color: inherit; }
 .hero-sub { display: block; margin-top: 10px; font-size: clamp(.95rem, 1.6vw, 1.08rem); color: #d9d2c4; letter-spacing: .08em; }
 .hero-link { display: inline-flex; align-items: center; gap: 6px; margin-top: 18px; color: var(--gold-2); font-size: .95rem; border-bottom: 1px solid rgba(201, 169, 110, .45); padding-bottom: 2px; }
 .hero-link:hover { color: #fff; border-color: #fff; }
+.hero-links { display: flex; flex-wrap: wrap; gap: 0 22px; }
 .dots { display: flex; gap: 10px; margin: 24px 0 22px; }
 .dots i { width: 5px; height: 5px; border-radius: 50%; background: var(--gold); opacity: .8; }
 .hero-tagline { margin: 0; font-size: clamp(1.02rem, 1.7vw, 1.18rem); color: #e9e4da; letter-spacing: .06em; }
@@ -308,6 +309,7 @@ a.dcard:hover { border-color: rgba(201, 169, 110, .55); }
 .dcard p { margin: 0; color: var(--muted); font-size: .95rem; flex: 1; }
 .dcard .chips { margin-bottom: 4px; }
 .dcard .btn { align-self: flex-start; margin-top: 18px; }
+.dcard-wide { grid-column: 1 / -1; }
 .boundary { margin-top: 16px; padding: 18px 22px; display: flex; gap: 16px; align-items: flex-start; border-color: rgba(201, 169, 110, .3); }
 .boundary strong { color: var(--gold-2); white-space: nowrap; }
 .boundary p { margin: 0; color: #d9d4ca; font-size: .94rem; }
@@ -483,7 +485,7 @@ dialog.line-dlg::backdrop { background: rgba(0, 0, 0, .7); backdrop-filter: blur
   body { padding-bottom: calc(68px + env(safe-area-inset-bottom)); }
   .wrap, .layout, .tabs ul { padding-left: 16px; padding-right: 16px; }
   .brand .b-store { display: inline; font-size: .72rem; letter-spacing: .02em; }
-  .hero-link, .dots, .hero-meta { display: none; }
+  .hero-links, .dots, .hero-meta { display: none; }
   .hero-tagline { margin-top: 16px; }
   .topbar { font-size: .84rem; min-height: 36px; gap: 8px; }
   .topbar .tb-long { display: none; }
@@ -536,12 +538,13 @@ dialog.line-dlg::backdrop { background: rgba(0, 0, 0, .7); backdrop-filter: blur
   <symbol id="i-play" viewBox="0 0 24 24"><path fill="currentColor" d="M8 5.5v13l10.5-6.5z"/></symbol>
 </svg>
 
-<a class="topbar" href="https://house0975715071.github.io/ziwei/" target="_blank" rel="noopener">
+<div class="topbar">
   <span class="tb-star" aria-hidden="true">✦</span>
-  <span class="tb-long">房仲命理師阿良｜免費紫微斗數排盤：輸入生日時辰，看事業、財運、感情</span>
-  <span class="tb-short">房仲命理師｜免費紫微斗數排盤</span>
-  <span class="tb-go">立即排盤 →</span>
-</a>
+  <span class="tb-long">房仲命理師阿良｜免費線上排盤，輸入生日就能看事業、財運、感情</span>
+  <span class="tb-short">免費排盤</span>
+  <a class="tb-go" href="https://house0975715071.github.io/ziwei/" target="_blank" rel="noopener">紫微斗數 →</a>
+  <a class="tb-go" href="https://house0975715071.github.io/astro/" target="_blank" rel="noopener">西洋星盤 →</a>
+</div>
 
 <header class="header" id="header">
   <div class="wrap">
@@ -574,7 +577,7 @@ dialog.line-dlg::backdrop { background: rgba(0, 0, 0, .7); backdrop-filter: blur
         <h1 class="hero-title">
           <span class="hero-name">劉益良</span>
           <span class="hero-role">房仲命理師</span>
-          <span class="hero-sub">中壢・桃園 房產顧問｜紫微斗數・陽宅堪輿</span>
+          <span class="hero-sub">中壢・桃園 房產顧問｜紫微・星盤・陽宅</span>
         </h1>
         <div class="dots" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
         <p class="hero-tagline">先誠實，再成交——沉穩，是房產決策最需要的底氣。</p>
@@ -583,7 +586,10 @@ dialog.line-dlg::backdrop { background: rgba(0, 0, 0, .7); backdrop-filter: blur
           <a class="btn btn-primary" href="#consult">預約一對一諮詢</a>
           <a class="btn btn-ghost" href="#listings">看阿良的物件</a>
         </div>
-        <a class="hero-link" href="https://house0975715071.github.io/ziwei/" target="_blank" rel="noopener">✦ 免費排紫微斗數命盤 →</a>
+        <div class="hero-links">
+          <a class="hero-link" href="https://house0975715071.github.io/ziwei/" target="_blank" rel="noopener">✦ 免費排紫微斗數命盤 →</a>
+          <a class="hero-link" href="https://house0975715071.github.io/astro/" target="_blank" rel="noopener">✦ 免費排西洋星盤 →</a>
+        </div>
       </div>
     </div>
   </section>
@@ -616,7 +622,13 @@ dialog.line-dlg::backdrop { background: rgba(0, 0, 0, .7); backdrop-filter: blur
             <p>輸入生日時辰，免費排出你的紫微斗數命盤：五大面向雷達圖、十二宮、人生運勢曲線、適合的工作，還能聽語音解說。生日只在你的手機裡計算，不會上傳。</p>
             <span class="btn btn-primary btn-sm">免費排盤<svg class="ico"><use href="#i-arrow"/></svg></span>
           </a>
-          <div class="card dcard reveal">
+          <a class="card dcard reveal" href="https://house0975715071.github.io/astro/" target="_blank" rel="noopener">
+            <small>FREE · ASTROLOGY</small>
+            <h3>西洋星盤｜免費線上排盤</h3>
+            <p>輸入生日、出生時間與出生地，免費排出你的西洋占星星盤：太陽、月亮、上升星座、星盤輪盤、五大面向雷達圖、今年行運，還能聽語音解說。生日只在你的手機裡計算，不會上傳。</p>
+            <span class="btn btn-primary btn-sm">免費排盤<svg class="ico"><use href="#i-arrow"/></svg></span>
+          </a>
+          <div class="card dcard dcard-wide reveal">
             <small>FENG SHUI · 預約制</small>
             <h3>陽宅諮詢｜看方位、看格局</h3>
             <p>以大門定方位、羅盤立向，用八宅與玄空飛星看各方位；廚房、廁所、臥室怎麼配，外面有沒有路沖、反弓這類形煞。買房前、搬家前、裝修前都可以先看。</p>
@@ -774,7 +786,7 @@ dialog.line-dlg::backdrop { background: rgba(0, 0, 0, .7); backdrop-filter: blur
           <details class="reveal"><summary>換屋要先賣還是先買？</summary><div class="ans"><p>看資金。阿良的做法是先估現在這間能賣多少、扣掉稅費和貸款實拿多少，再決定下一間的預算，順序才不會卡到資金。另外，自住房先賣後買、或先買後賣，兩次過戶間隔 2 年內，房地合一稅可以按「新屋價÷舊屋售價」的比例退還或扣抵（新屋比較貴就全額）；新買的房子過戶後 5 年內不能改作其他用途或再轉手，否則要補繳。</p></div></details>
           <details class="reveal"><summary>阿良主要服務哪些區域？</summary><div class="ans"><p>主力在中壢（含體育園區）、平鎮、八德、桃園區；龜山、大園、觀音、青埔／高鐵周邊也有在跑。土地、廠房、倉庫以桃園為主，其他地區可以先問。</p></div></details>
           <details class="reveal"><summary>土地、廠房、倉庫也可以找你嗎？</summary><div class="ans"><p>可以。阿良的團隊有專責工商不動產的夥伴，買、賣、租都做。先告訴我們：買／賣／租、區域、大概坪數、用途（自用或投資），我們一起回你。</p></div></details>
-          <details class="reveal"><summary>紫微斗數排盤要錢嗎？生日會被存起來嗎？</summary><div class="ans"><p>不用錢，網頁版免費，輸入生日時辰就能排。生日只在你的手機裡計算，不會上傳，也不會留在網址上。</p></div></details>
+          <details class="reveal"><summary>紫微斗數、西洋星盤要錢嗎？生日會被存起來嗎？</summary><div class="ans"><p>不用錢，網頁版都免費：紫微輸入生日時辰、星盤再加上出生地就能排。生日只在你的手機裡計算，不會上傳，也不會留在網址上。</p></div></details>
           <details class="reveal"><summary>陽宅諮詢跟買賣房子怎麼分開？</summary><div class="ans"><p>命理是參考，不是交易保證。你要看的房子如果是阿良或同事經手的物件，要不要出價、出多少，用實價登錄和貸款試算來談，不用風水決定；阿良自己寫的物件文案，也不放風水說法。</p></div></details>
           <details class="reveal"><summary>怎麼確認是阿良本人？</summary><div class="ans"><p>打店電 (03) 437-5566 找劉益良，或到中信房屋官網看阿良的個人頁；營業員證號是 (112) 登字第442586號。阿良不會在 LINE 上跟你要帳號密碼；遇到要付款或要證件的情況，先打店電查證再動作。</p></div></details>
         </div>
